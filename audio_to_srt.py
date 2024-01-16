@@ -9,7 +9,6 @@ access_key = os.getenv("access_key")
 def audio_srt(audio_path,filename):
 
     leopard = pvleopard.create(access_key=access_key)
-    #audio_path = "test.mp3"
     transcript, words = leopard.process_file(audio_path)
 
     def second_to_timecode(x: float) -> str:

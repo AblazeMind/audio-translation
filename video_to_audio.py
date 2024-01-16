@@ -11,5 +11,3 @@ def extract_audio(path, filename):
     video.audio.write_audiofile(f"audio/{filename}.mp3")
     
     return "Done"
-
-#extract_audio("video\Search in an almost sorted array  GeeksforGeeks.mp4", "Search in an almost sorted array  GeeksforGeeks")

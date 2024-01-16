@@ -13,7 +13,7 @@ for filename in os.listdir(directory):
         continue
     f = os.path.join(directory, filename)
     # file name without extension
-    filename2=  Path(f).stem #os.path.splitext(f)[0]
+    filename2=  Path(f).stem 
     # extract audio
     extract_audio(f, filename2)
     #Convert to str
